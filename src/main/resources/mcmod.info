@@ -1,0 +1,16 @@
+[
+{
+  "modid": "actuallybaubles",
+  "name": "Actually Baubles",
+  "description": "Baubles capability for Actually Additions rings!",
+  "version": "1.0",
+  "mcversion": "1.11.2",
+  "url": "https://github.com/Jacky1356400/ActuallyBaubles",
+  "updateUrl": "",
+  "authorList": ["Jacky1356400"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": ["actuallyadditions", "baubles"]
+}
+]
