@@ -3,6 +3,7 @@ package me.jacky1356400.actuallybaubles;
 import de.ellpeck.actuallyadditions.mod.items.InitItems;
 import me.jacky1356400.actuallybaubles.item.ItemMagnetRingBauble;
 import me.jacky1356400.actuallybaubles.item.ItemPotionRingAdvancedBauble;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -16,6 +17,17 @@ public class ActuallyBaubles {
     public static final String VERSION = "1.0";
     public static final String MODID = "actuallybaubles";
     public static final String DEPENDS = "required-after:actuallyadditions;required-after:baubles;";
+    public static final CreativeTabs TAB = new CreativeTabs(MODID) {
+        @Override
+        public String getTranslatedTabLabel() {
+            return "Actually Baubles";
+        }
+
+        @Override
+        public ItemStack getTabIconItem(){
+            return new ItemStack(InitItems.itemMisc, 1 , 6);
+        }
+    };
     public static ItemMagnetRingBauble magnetRing;
     public static ItemPotionRingAdvancedBauble potionRingAdvanced;
 
