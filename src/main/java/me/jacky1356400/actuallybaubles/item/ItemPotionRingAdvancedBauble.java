@@ -3,7 +3,7 @@ package me.jacky1356400.actuallybaubles.item;
 import baubles.api.BaubleType;
 import baubles.api.IBauble;
 import de.ellpeck.actuallyadditions.mod.items.ItemPotionRing;
-import me.jacky1356400.actuallybaubles.ActuallyBaublesTab;
+import me.jacky1356400.actuallybaubles.ActuallyBaubles;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.client.renderer.color.IItemColor;
@@ -17,7 +17,7 @@ public class ItemPotionRingAdvancedBauble extends ItemPotionRing implements IBau
     public ItemPotionRingAdvancedBauble(boolean isAdvanced, String name) {
         super(isAdvanced, name);
         setUnlocalizedName("actuallyadditions.itemPotionRingAdvanced");
-        setCreativeTab(ActuallyBaublesTab.INSTANCE);
+        setCreativeTab(ActuallyBaubles.TAB);
     }
 
     @Override

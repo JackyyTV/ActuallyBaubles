@@ -1,8 +1,9 @@
 package me.jacky1356400.actuallybaubles;
 
 import de.ellpeck.actuallyadditions.mod.items.InitItems;
-import me.jacky1356400.actuallybaubles.item.ItemMagnetRingBauble;
-import me.jacky1356400.actuallybaubles.item.ItemPotionRingAdvancedBauble;
+import me.jacky1356400.actuallybaubles.item.*;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -16,9 +17,22 @@ public class ActuallyBaubles {
     public static final String VERSION = "1.0";
     public static final String MODID = "actuallybaubles";
     public static final String DEPENDS = "required-after:actuallyadditions;required-after:Baubles;";
+    public static final CreativeTabs TAB = new CreativeTabs(MODID) {
+        @Override
+        public String getTranslatedTabLabel() {
+            return "Actually Baubles";
+        }
+        @Override
+        public Item getTabIconItem() {
+            return InitItems.itemMisc;
+        }
+        @Override
+        public int getIconItemDamage() {
+            return 6;
+        }
+    };
     public static ItemMagnetRingBauble magnetRing;
     public static ItemPotionRingAdvancedBauble potionRingAdvanced;
-
     @Mod.EventHandler
     public void init(FMLInitializationEvent event){
         magnetRing = GameRegistry.register(new ItemMagnetRingBauble("magnet_ring_bauble"));

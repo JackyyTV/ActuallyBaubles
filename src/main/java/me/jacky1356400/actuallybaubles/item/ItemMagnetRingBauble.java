@@ -3,7 +3,7 @@ package me.jacky1356400.actuallybaubles.item;
 import baubles.api.BaubleType;
 import baubles.api.IBauble;
 import de.ellpeck.actuallyadditions.mod.items.ItemMagnetRing;
-import me.jacky1356400.actuallybaubles.ActuallyBaublesTab;
+import me.jacky1356400.actuallybaubles.ActuallyBaubles;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.EntityLivingBase;
@@ -16,7 +16,7 @@ public class ItemMagnetRingBauble extends ItemMagnetRing implements IBauble {
     public ItemMagnetRingBauble(String name) {
         super(name);
         setUnlocalizedName("actuallyadditions.itemSuctionRing");
-        setCreativeTab(ActuallyBaublesTab.INSTANCE);
+        setCreativeTab(ActuallyBaubles.TAB);
     }
 
     @Override
