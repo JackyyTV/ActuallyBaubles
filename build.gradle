@@ -52,7 +52,7 @@ dependencies {
 	deobfCompile "de.ellpeck.actuallyadditions:ActuallyAdditions:1.10.2-r+"
 }
 
-processResources{
+processResources {
     inputs.property "version", project.version
     inputs.property "mcversion", project.minecraft.version
     from(sourceSets.main.resources.srcDirs) {
