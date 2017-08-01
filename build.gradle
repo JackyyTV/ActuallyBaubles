@@ -41,14 +41,10 @@ repositories {
 	maven {
 	    url "https://maven.chaosfield.at"
 	}
-	ivy {
-		artifactPattern "http://asie.pl/javadeps/[module]-[revision](-[classifier]).[ext]"
-	}
 }
 
 dependencies {
-    compile files("libs/angelRingToBauble-1.12-0.3.0.46+306787e.jar")
-    deobfCompile name: "Baubles", version: "1.12-1.4.5"
+    compile files("libs/Baubles-1.12-1.5.0.jar")
 	deobfCompile "mezz.jei:jei_1.12:4.7.1.+:api"
     runtime "mezz.jei:jei_1.12:4.7.1.+"
 	deobfCompile "mcp.mobius.waila:Hwyla:1.8.19-B33_1.12:api"
@@ -56,7 +52,7 @@ dependencies {
 	deobfCompile "de.ellpeck.actuallyadditions:ActuallyAdditions:1.12-r+"
 }
 
-processResources{
+processResources {
     inputs.property "version", project.version
     inputs.property "mcversion", project.minecraft.version
     from(sourceSets.main.resources.srcDirs) {

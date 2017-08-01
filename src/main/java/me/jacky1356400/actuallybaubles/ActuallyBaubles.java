@@ -1,9 +1,7 @@
 package me.jacky1356400.actuallybaubles;
 
 import de.ellpeck.actuallyadditions.mod.items.InitItems;
-import me.jacky1356400.actuallybaubles.item.ItemBatteryBauble;
-import me.jacky1356400.actuallybaubles.item.ItemMagnetRingBauble;
-import me.jacky1356400.actuallybaubles.item.ItemPotionRingAdvancedBauble;
+import me.jacky1356400.actuallybaubles.item.*;
 import net.minecraft.client.Minecraft;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -36,12 +34,12 @@ public class ActuallyBaubles {
     public static final List<Item> ITEMS = new ArrayList<Item>();
     public static final CreativeTabs TAB = new CreativeTabs(MODID) {
         @Override
-        public ItemStack getTabIconItem() {
-            return new ItemStack(InitItems.itemMisc, 1 , 6);
-        }
-        @Override
         public String getTranslatedTabLabel() {
             return "Actually Baubles";
+        }
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(InitItems.itemMisc, 1 , 6);
         }
     };
     public static ItemMagnetRingBauble magnetRing = new ItemMagnetRingBauble("magnet_ring_bauble");
