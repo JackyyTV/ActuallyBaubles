@@ -4,13 +4,8 @@ import baubles.api.BaubleType;
 import baubles.api.IBauble;
 import de.ellpeck.actuallyadditions.mod.items.ItemPotionRing;
 import me.jacky1356400.actuallybaubles.ActuallyBaubles;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.client.renderer.color.IItemColor;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ItemPotionRingAdvancedBauble extends ItemPotionRing implements IBauble {
 
@@ -39,22 +34,6 @@ public class ItemPotionRingAdvancedBauble extends ItemPotionRing implements IBau
 
     public void onWornTick(ItemStack stack, EntityLivingBase player) {
         onUpdate(stack, player.getEntityWorld(), player, 0, false);
-    }
-
-    @SideOnly(Side.CLIENT)
-    public void initModel() {
-        for (int i = 0; i < ALL_RINGS.length; i++) {
-            ModelResourceLocation location = new ModelResourceLocation("actuallyadditions:item_potion_ring_advanced", "inventory");
-            Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(this, i, location);
-            Minecraft.getMinecraft().getItemColors().registerItemColorHandler(
-                    new IItemColor(){
-                        @Override
-                        public int getColorFromItemstack(ItemStack stack, int tintIndex){
-                            return stack.getItemDamage() >= ALL_RINGS.length ? 0xFFFFFF : ALL_RINGS[stack.getItemDamage()].color;
-                        }
-                    }
-                    , this);
-        }
     }
 
 }

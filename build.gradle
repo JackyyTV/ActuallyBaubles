@@ -44,7 +44,7 @@ repositories {
 }
 
 dependencies {
-    compile files("libs/Baubles-1.11-1.4.5.jar")
+    compile files("libs/Baubles-1.11-1.4.6.jar")
 	deobfCompile "mezz.jei:jei_1.11.2:4.5.0.+:api"
     runtime "mezz.jei:jei_1.11.2:4.5.0.+"
 	deobfCompile "mcp.mobius.waila:Hwyla:1.8.15-B29_1.11:api"
@@ -52,7 +52,7 @@ dependencies {
 	deobfCompile "de.ellpeck.actuallyadditions:ActuallyAdditions:1.11.2-r+"
 }
 
-processResources{
+processResources {
     inputs.property "version", project.version
     inputs.property "mcversion", project.minecraft.version
     from(sourceSets.main.resources.srcDirs) {
