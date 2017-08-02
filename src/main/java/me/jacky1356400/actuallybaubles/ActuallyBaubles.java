@@ -27,7 +27,7 @@ import static de.ellpeck.actuallyadditions.mod.items.ItemPotionRing.ALL_RINGS;
 @Mod(modid = ActuallyBaubles.MODID, version = ActuallyBaubles.VERSION, name = ActuallyBaubles.MODNAME, dependencies = ActuallyBaubles.DEPENDS, useMetadata = true)
 public class ActuallyBaubles {
 
-    public static final String VERSION = "1.0";
+    public static final String VERSION = "1.1";
     public static final String MODID = "actuallybaubles";
     public static final String MODNAME = "ActuallyBaubles";
     public static final String DEPENDS = "required-after:actuallyadditions;required-after:baubles;";
@@ -51,7 +51,7 @@ public class ActuallyBaubles {
     public static ItemBatteryBauble batteryQuintuple = new ItemBatteryBauble("battery_quintuple_bauble", 2000000, 100000);
 
     @Mod.EventHandler
-    public void preInit(FMLPreInitializationEvent event){
+    public void preInit(FMLPreInitializationEvent event) {
         MinecraftForge.EVENT_BUS.register(this);
     }
 
