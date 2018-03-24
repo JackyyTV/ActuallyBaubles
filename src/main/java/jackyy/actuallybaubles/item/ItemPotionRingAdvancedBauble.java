@@ -1,9 +1,9 @@
-package me.jacky1356400.actuallybaubles.item;
+package jackyy.actuallybaubles.item;
 
 import baubles.api.BaubleType;
 import baubles.api.IBauble;
 import de.ellpeck.actuallyadditions.mod.items.ItemPotionRing;
-import me.jacky1356400.actuallybaubles.ActuallyBaubles;
+import jackyy.actuallybaubles.ActuallyBaubles;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 

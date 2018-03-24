@@ -1,22 +1,23 @@
-package me.jacky1356400.actuallybaubles.item;
+package jackyy.actuallybaubles.item;
 
 import baubles.api.BaubleType;
 import baubles.api.IBauble;
-import de.ellpeck.actuallyadditions.mod.items.ItemBattery;
-import me.jacky1356400.actuallybaubles.ActuallyBaubles;
+import de.ellpeck.actuallyadditions.mod.items.ItemMagnetRing;
+import jackyy.actuallybaubles.ActuallyBaubles;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 
-public class ItemBatteryBauble extends ItemBattery implements IBauble {
+public class ItemMagnetRingBauble extends ItemMagnetRing implements IBauble {
 
-    public ItemBatteryBauble(String name, int capacity, int transfer){
-        super(name, capacity, transfer);
+    public ItemMagnetRingBauble(String name) {
+        super(name);
+        setUnlocalizedName("actuallyadditions.itemSuctionRing");
         setCreativeTab(ActuallyBaubles.TAB);
     }
 
     @Override
     public BaubleType getBaubleType(ItemStack itemStack) {
-        return BaubleType.TRINKET;
+        return BaubleType.RING;
     }
 
     public boolean canEquip(ItemStack itemstack, EntityLivingBase player) {
