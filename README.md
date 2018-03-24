@@ -1,9 +1,9 @@
 # ActuallyBaubles
-[![Downloads](http://cf.way2muchnoise.eu/full_actually-baubles_downloads.svg)](https://minecraft.curseforge.com/projectsactually-baubles) [![MCVersion](http://cf.way2muchnoise.eu/versions/actually-baubles.svg)](https://minecraft.curseforge.com/projects/actually-baubles)
+[![Downloads](http://cf.way2muchnoise.eu/full_actually-baubles_downloads.svg)](https://minecraft.curseforge.com/projects/actually-baubles) [![MCVersion](http://cf.way2muchnoise.eu/versions/actually-baubles.svg)](https://minecraft.curseforge.com/projects/actually-baubles)
 
 [![GitHub issues](https://img.shields.io/github/issues/JackyyTV/ActuallyBaubles.svg)](https://github.com/JackyyTV/ActuallyBaubles/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/JackyyTV/ActuallyBaubles.svg)](https://github.com/JackyyTV/ActuallyBaubles/pulls)
 
-[![Logo](https://i.gyazo.com/7e8aa868fc54ed11c7424448623688db.png)](https://minecraft.curseforge.com/projects/actually-baubles)
+[![Logo](https://i.gyazo.com/7abbb45f4ba8a3ec50efc98036fcac8b.png)](https://minecraft.curseforge.com/projects/actually-baubles)
 
 ---
 
