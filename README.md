@@ -20,9 +20,9 @@ Submit any bug reports / suggestions via [issue tracker](https://github.com/Jack
 ## Contact Me
 
 - Twitter - [@JackyyTV](https://twitter.com/JackyyTV)
-- Discord - Jacky#3044
+- Discord - [jackyytv](https://jackyy.hk/discord)
 - Twitch - [Jackyy](https://www.twitch.tv/jackyy)
-- Reddit - [Jacky1356400](https://www.reddit.com/message/compose/?to=Jacky1356400)
+- Reddit - [JackyyTV](https://www.reddit.com/message/compose/?to=JackyyTV)
 
 ---
 
